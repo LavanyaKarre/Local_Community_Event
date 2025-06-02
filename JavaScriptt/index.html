@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Local Community Event Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Community Event Portal</h1>
+
+  <!-- Filter and Search -->
+  <select id="categoryFilter">
+    <option value="All">All Categories</option>
+    <option value="Music">Music</option>
+    <option value="Workshop">Workshop</option>
+  </select>
+  <input type="text" id="searchInput" placeholder="Search events..." />
+
+  <!-- Event Container -->
+  <div id="eventsContainer"></div>
+
+  <!-- Registration Form -->
+  <form id="registrationForm">
+    <h3>Register for an Event</h3>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <select name="selectedEvent" required></select>
+    <button type="submit">Register</button>
+  </form>
+
+  <!-- jQuery CDN for Exercise 14 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
