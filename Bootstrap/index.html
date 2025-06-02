@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 5 Exercises</title>
+  <!-- Bootstrap 5 CSS via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    /* Custom styles for demonstration */
+    .custom-section {
+      padding: 2rem 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .custom-section:last-child {
+      border-bottom: none;
+    }
+    .fixed-footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    .position-relative {
+      position: relative;
+    }
+    .position-absolute {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Exercise 1: Setting Up Bootstrap 5 -->
+  <section class="custom-section">
+    <h2>Exercise 1: Setting Up Bootstrap 5</h2>
+    <p>This page includes Bootstrap 5 via CDN.</p>
+  </section>
+
+  <!-- Exercise 2: Bootstrap Structure and Files -->
+  <section class="custom-section">
+    <h2>Exercise 2: Bootstrap Structure and Files</h2>
+    <p>Bootstrap's structure includes CSS, JS, and icons folders. CSS contains stylesheets, JS includes JavaScript plugins, and icons provide scalable vector icons.</p>
+    <!-- Bootstrap's JavaScript plugins included via bootstrap.bundle.min.js -->
+  </section>
+
+  <!-- Exercise 3: Fundamentals of Responsive Grid Layout -->
+  <section class="custom-section">
+    <h2>Exercise 3: Responsive Grid Layout</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 bg-light p-3">Column 1</div>
+        <div class="col-12 col-md-6 col-lg-4 bg-secondary text-white p-3">Column 2</div>
+        <div class="col-12 col-md-6 col-lg-4 bg-light p-3">Column 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exercise 4: Column Layouts and Grid Classes -->
+  <section class="custom-section">
+    <h2>Exercise 4: Column Layouts</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 bg-warning p-3">Sidebar</div>
+        <div class="col-md-9 bg-info text-white p-3">Content Area</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-sm-3 bg-light p-3">Col 1</div>
+        <div class="col-sm-3 bg-secondary text-white p-3">Col 2</div>
+        <div class="col-sm-3 bg-light p-3">Col 3</div>
+        <div class="col-sm-3 bg-secondary text-white p-3">Col 4</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exercise 5: Alignment and Reordering in Grid -->
+  <section class="custom-section">
+    <h2>Exercise 5: Alignment and Reordering</h2>
+    <div class="container">
+      <div class="row justify-content-center align-items-center" style="height: 100px;">
+        <div class="col-4 bg-light p-3">Centered Content</div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4 order-md-2 bg-warning p-3">First on Mobile, Second on Desktop</div>
+        <div class="col-md-8 order-md-1 bg-info text-white p-3">Second on Mobile, First on Desktop</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exercise 6: Responsive Flexbox Utilities -->
+  <section class="custom-section">
+    <h2>Exercise 6: Responsive Flexbox Utilities</h2>
+    <nav class="d-flex flex-column flex-md-row bg-light p-3">
+      <a class="nav-link" href="#">Home</a>
+      <a class="nav-link" href="#">About</a>
+      <a class="nav-link" href="#">Contact</a>
+    </nav>
+    <div class="card mt-3 d-flex flex-row justify-content-between align-items-center p-3">
+      <div>Card Content</div>
+      <button class="btn btn-primary">Action</button>
+    </div>
+  </section>
+
+  <!-- Exercise 7: Typography -->
+  <section class="custom-section">
+    <h2>Exercise 7: Typography</h2>
+    <h1 class="display-1">Display 1</h1>
+    <p class="lead">This is a lead paragraph.</p>
+    <p class="text-muted">Muted text.</p>
+    <p class="fw-bold">Bold text.</p>
+    <p class="text-uppercase">uppercase text</p>
+    <p class="text-lowercase">LOWERCASE TEXT</p>
+    <p class="text-capitalize">capitalize each word</p>
+  </section>
+
+  <!-- Exercise 8: Forms -->
+  <section class="custom-section">
+    <h2>Exercise 8: Forms</h2>
+    <form class="mb-3">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name">
+      </div>
+      <div class="mb-3">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input"> Subscribe
+        </label>
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+      </div>
+    </form>
+    <form>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+        <label for="floatingEmail">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+    </form>
+  </section>
+
+  <!-- Exercise 9: Buttons -->
+  <section class="custom-section">
+    <h2>Exercise 9: Buttons</h2>
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-outline-success">Outline Success</button>
+    <div class="btn-group mt-3" role="group">
+      <button type="button" class="btn btn-info">Left</button>
+      <button type="button" class="btn btn-info">Middle</button>
+      <button type="button" class="btn btn-info">Right</button>
+    </div>
+    <div class="btn-group mt-3" role="group">
+      <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btncheck1">Toggle</label>
+    </div>
+  </section>
+
+  <!-- Exercise 10: Navbars and Navigation -->
+  <section class="custom-section">
+    <h2>Exercise 10: Navbars and Navigation</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <ul class="nav nav-tabs mt-3">
+      <li class="nav-item"><a class="nav-link active" href="#">Tab 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Tab 2</a></li>
+    </ul>
+    <ul class="nav nav-pills mt-3">
+      <li class="nav-item"><a class="nav-link active" href="#">Pill 1</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Pill 2</a></li>
+    </ul>
+  </section>
+
+  <!-- Exercise 11: Cards and Media Objects -->
+  <section class="custom-section">
+    <h2>Exercise 11: Cards and Media Objects</h2>
+    <div class="card" style="width: 18rem;">
+      <img src="https://via.placeholder.com/150" class="card-img-top" alt="Profile">
+      <div class="card-body">
+        <h5 class="card-title">Profile Name</h5>
+        <p class="card-text">Some quick example text.</p>
+      </div>
+    </div>
+    <div class="d-flex mt-3">
+      <img src="https://via.placeholder
+::contentReference[oaicite:0]{index=0}
+ 
